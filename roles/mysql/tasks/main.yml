@@ -4,6 +4,12 @@
     package: 
       name: mysql-server
       state: present
+  - name: Install boto3 and boto3 core dependencies
+    pip:
+      name:
+      - boto3
+      - botocore
+      executable: pip3.9
   - name: Enabling and restart services
     service:
       name: mysqld
