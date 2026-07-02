@@ -17,12 +17,12 @@ AMI_ID: ami-02dfbd4ff395f2a1b #ami-0220d79f3f480ecf5
 INSTANCE_TYPE: t3.micro
 KEY_NAME: ami2
 METHOD: create
-MONGODB_HOST: mongodb.mrmotam.online
-REDIS_HOST: redis.mrmotam.online
-MYSQL_HOST: mysql.mrmotam.online 
-RABBITMQ_HOST: rabbitmq.mrmotam.online 
-CATALOGUE_HOST: catalogue.mrmotam.online
-USER_HOST: user.mrmotam.online
-CART_HOST: cart.mrmotam.online
-SHIPPING_HOST: shipping.mrmotam.online
-PAYMENT_HOST: payment.mrmotam.online
+MONGODB_HOST: mongodb-{{ env }}.mrmotam.online
+REDIS_HOST: redis-{{ env }}.mrmotam.online
+MYSQL_HOST: mysql-{{ env }}.mrmotam.online 
+RABBITMQ_HOST: rabbitmq-{{ env }}.mrmotam.online 
+CATALOGUE_HOST: catalogue-backend-lb-{{ env }}.mrmotam.online
+USER_HOST: user-backend-lb-{{ env }}.mrmotam.online
+CART_HOST: cart-backend-lb-{{ env }}.mrmotam.online
+SHIPPING_HOST: shipping-backend-lb-{{ env }}.mrmotam.online
+PAYMENT_HOST: payment-backend-lb-{{ env }}.mrmotam.online
