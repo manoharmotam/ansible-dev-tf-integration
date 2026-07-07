@@ -21,8 +21,8 @@ MONGODB_HOST: mongodb-{{ env }}.mrmotam.online
 REDIS_HOST: redis-{{ env }}.mrmotam.online
 MYSQL_HOST: mysql-{{ env }}.mrmotam.online 
 RABBITMQ_HOST: rabbitmq-{{ env }}.mrmotam.online 
-CATALOGUE_HOST: catalogue-backend-lb-{{ env }}.mrmotam.online
-USER_HOST: user-backend-lb-{{ env }}.mrmotam.online
-CART_HOST: cart-backend-lb-{{ env }}.mrmotam.online
-SHIPPING_HOST: shipping-backend-lb-{{ env }}.mrmotam.online
-PAYMENT_HOST: payment-backend-lb-{{ env }}.mrmotam.online
+CATALOGUE_HOST: catalogue.backend-lb-{{ env }}.mrmotam.online
+USER_HOST: user.backend-lb-{{ env }}.mrmotam.online
+CART_HOST: cart.backend-lb-{{ env }}.mrmotam.online
+SHIPPING_HOST: shipping.backend-lb-{{ env }}.mrmotam.online
+PAYMENT_HOST: payment.backend-lb-{{ env }}.mrmotam.online
